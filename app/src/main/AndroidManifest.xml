@@ -9,6 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjektAktywnosc">
+        <activity android:name=".CaleC"></activity>
+        <activity android:name=".GornaPC" />
+        <activity android:name=".DolnaPC" />
+        <activity android:name=".StworzP" />
+        <activity android:name=".PlanT" />
+        <activity android:name=".Cel" />
+        <activity android:name=".Waga" />
+        <activity android:name=".Sen" />
+        <activity android:name=".Woda" />
+        <activity android:name=".Silownia" />
+        <activity android:name=".Bieganie" />
+        <activity android:name=".StronaGlowna" />
+        <activity android:name=".StronadoRestracji" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
