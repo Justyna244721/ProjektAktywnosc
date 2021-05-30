@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">ProjektAktywnosc</string>
-
+    <string name="err_msg_enter_login">Wprowadź email</string>
+    <string name="err_msg_enter_password">Wprowadź hasło</string>
+    <string name="err_msg_enter_reppassword">Potwierdź hasło</string>
+    <string name="err_msg_password_mismatch">Błędne hasło</string>
 
 </resources>
