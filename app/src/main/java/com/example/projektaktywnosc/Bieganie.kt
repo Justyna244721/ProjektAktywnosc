@@ -1,52 +1,23 @@
 package com.example.projektaktywnosc
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 
 class Bieganie : AppCompatActivity() {
     private var planT: Button?=null
-    private var zmienP: Button?=null
-    private var stworzP: Button?=null
+    private var planTSZ: Button?=null
+    private var planTZ: Button?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bieganie)
         planT=findViewById(R.id.planT)
-        zmienP=findViewById(R.id.zmienP)
-        stworzP=findViewById(R.id.stworzP)
+        planTSZ=findViewById(R.id.planTSZ)
+        planTZ=findViewById(R.id.planTZ)
 
-
-        planT?.setOnClickListener(object : View.OnClickListener{
-            override fun onClick(v: View?) {
-                openPlanT()
-            }
-        })
-        zmienP?.setOnClickListener(object : View.OnClickListener{
-            override fun onClick(v: View?) {
-                openStronadoRestracji()
-            }
-        })
-        stworzP?.setOnClickListener(object : View.OnClickListener{
-            override fun onClick(v: View?) {
-                openStworzP()
-            }
-        })
+        planT?.setOnClickListener { setContentView(R.layout.activity_plan_t)}
+        planTSZ?.setOnClickListener { setContentView(R.layout.activity_plan_tsz) }
+        planTZ?.setOnClickListener { setContentView(R.layout.activity_plan_tz) }
     }
-    private fun openPlanT(){
-        val intent= Intent(this,PlanT::class.java)
-        startActivity(intent)
-    }
-    private fun openStronadoRestracji() {
-        val intent = Intent(this, StronadoRestracji::class.java)
-        startActivity(intent)
-    }
-    private fun openStworzP() {
-        val intent = Intent(this, StworzP::class.java)
-        startActivity(intent)
-    }
-
-
 }

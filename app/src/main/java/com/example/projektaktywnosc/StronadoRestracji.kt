@@ -1,7 +1,6 @@
 package com.example.projektaktywnosc
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
@@ -15,7 +14,7 @@ import com.google.firebase.auth.FirebaseUser
 class StronadoRestracji : Informacjerejestracja() {
     private var logowanie: Button?=null
     private var wyjscie: Button?=null
-    private var email: EditText?=null
+    var email: EditText?=null
     private var haslo: EditText?=null
     private var powturzhaslo: EditText?=null
 
@@ -24,11 +23,10 @@ class StronadoRestracji : Informacjerejestracja() {
         super.onCreate(savedInstanceState)
         email=findViewById(R.id.email)
         haslo=findViewById(R.id.haslo)
-        powturzhaslo=findViewById(R.id.powturzhaslo)
+        powturzhaslo=findViewById(R.id.powtorzhaslo)
 
         setContentView(R.layout.activity_stronado_restracji)
         logowanie= findViewById(R.id.button3)
-
 
         logowanie?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?) {
@@ -38,44 +36,38 @@ class StronadoRestracji : Informacjerejestracja() {
 
 
     }
+
     //Przejście do strony Głównej
     private fun openStronaGlowna(){
         val intent= Intent(this,StronaGlowna::class.java)
         startActivity(intent)
     }
-    private fun validateRegisterDetails(): Boolean {
 
+    private fun validateRegisterDetails(): Boolean {
         return when{
             TextUtils.isEmpty(email?.text.toString().trim{ it <= ' '}) -> {
                 showErrorSnackBar(resources.getString(R.string.err_msg_enter_login),true)
                 false
             }
-
-
             TextUtils.isEmpty(haslo?.text.toString().trim{ it <= ' '}) -> {
                 showErrorSnackBar(resources.getString(R.string.err_msg_enter_password),true)
                 false
             }
-
             TextUtils.isEmpty(powturzhaslo?.text.toString().trim{ it <= ' '}) -> {
                 showErrorSnackBar(resources.getString(R.string.err_msg_enter_reppassword),true)
                 false
             }
-
             haslo?.text.toString().trim {it <= ' '} != powturzhaslo?.text.toString().trim{it <= ' '} -> {
                 showErrorSnackBar(resources.getString(R.string.err_msg_password_mismatch),true)
                 false
             }
-
-
             else -> {
                 //showErrorSnackBar("Your details are valid",false)
                 true
             }
         }
-
-
     }
+
     private fun registerUser(){
         if (validateRegisterDetails()){
             val login: String = email?.text.toString().trim() {it <= ' '}
@@ -91,11 +83,8 @@ class StronadoRestracji : Informacjerejestracja() {
                     } else{
                         showErrorSnackBar(task.exception!!.message.toString(),true)
                     }
-
                 }
             )
-
         }
     }
-
 }

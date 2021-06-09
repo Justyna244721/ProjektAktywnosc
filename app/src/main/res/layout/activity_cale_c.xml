@@ -19,12 +19,13 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="119dp"
-            android:layout_height="85dp"
+            android:layout_width="214dp"
+            android:layout_height="56dp"
             android:text="CAŁE CIAŁO"
             android:textColor="#040404"
             android:textSize="34sp"
             android:textStyle="bold"
+            android:typeface="monospace"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

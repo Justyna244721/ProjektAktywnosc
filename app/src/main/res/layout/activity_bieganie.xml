@@ -18,7 +18,7 @@
         android:layout_marginRight="30dp"
         android:layout_marginBottom="360dp"
         android:background="@drawable/bieganieguzik"
-        android:text="Aktualny plan treningowy"
+        android:text="PLAN 6-CIO TYGODNIOWY DLA POCZĄTKUJĄCYCH"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -31,7 +31,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/zmienP"
+        android:id="@+id/planTSZ"
         android:layout_width="370dp"
         android:layout_height="130dp"
         android:layout_marginStart="30dp"
@@ -41,7 +41,7 @@
         android:layout_marginRight="30dp"
         android:layout_marginBottom="204dp"
         android:background="@drawable/bieganieguzik"
-        android:text="Zmień poziom planu treningowego"
+        android:text="PLAN 6-CIO TYGODNIOWY DLA ŚREDNIOZAAWANSOWANYCH"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/planT" />
 
     <Button
-        android:id="@+id/stworzP"
+        android:id="@+id/planTZ"
         android:layout_width="370dp"
         android:layout_height="130dp"
         android:layout_marginStart="30dp"
@@ -62,7 +62,7 @@
         android:layout_marginRight="30dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/bieganieguzik"
-        android:text="Zmień poziom planu treningowego"
+        android:text="PLAN 6-CIO TYGODNIOWY DLA ZAAWANSOWANYCH"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -71,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/zmienP" />
+        app:layout_constraintTop_toBottomOf="@+id/planTSZ" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="409dp"

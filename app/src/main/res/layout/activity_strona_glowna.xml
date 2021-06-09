@@ -16,18 +16,18 @@
         android:layout_marginRight="45dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/cwiczenia1"
+        android:drawableBottom="@drawable/ic_chart"
         android:insetLeft="17dp"
         android:insetTop="17dp"
         android:insetRight="17dp"
         android:insetBottom="17dp"
-        android:text="Button"
         app:backgroundTint="#D41579"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toEndOf="@+id/waga"
         app:layout_constraintTop_toBottomOf="@+id/sen"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintVertical_bias="0.615" />
 
     <Button
         android:id="@+id/sen"
@@ -38,18 +38,18 @@
         android:layout_marginRight="45dp"
         android:layout_marginBottom="180dp"
         android:background="@drawable/cwiczenia1"
+        android:drawableBottom="@drawable/ic_sleep"
         android:insetLeft="17dp"
         android:insetTop="17dp"
         android:insetRight="17dp"
         android:insetBottom="17dp"
-        android:text="Button"
         app:backgroundTint="#52B5CD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toEndOf="@+id/woda"
         app:layout_constraintTop_toBottomOf="@+id/silownia"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.363" />
 
     <Button
         android:id="@+id/bieganie"
@@ -61,12 +61,17 @@
         android:layout_marginRight="228dp"
         android:layout_marginBottom="348dp"
         android:background="@drawable/cwiczenia1"
+        android:drawableBottom="@drawable/running"
+        android:freezesText="false"
+        android:gravity="center"
+        android:hapticFeedbackEnabled="true"
         android:insetLeft="17dp"
         android:insetTop="17dp"
         android:insetRight="17dp"
         android:insetBottom="17dp"
-        android:text="Button"
         app:backgroundTint="#96C93D"
+        app:elevation="0dp"
+        app:iconGravity="start|end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -79,15 +84,17 @@
         android:layout_marginRight="45dp"
         android:layout_marginBottom="348dp"
         android:background="@drawable/cwiczenia1"
+        android:drawableBottom="@drawable/ic_silowy"
+        android:drawingCacheQuality="high"
         android:insetLeft="17dp"
         android:insetTop="17dp"
         android:insetRight="17dp"
         android:insetBottom="17dp"
-        android:text="Button"
         app:backgroundTint="#D1D3D4"
+        app:elevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toEndOf="@+id/bieganie" />
 
     <Button
@@ -101,11 +108,11 @@
         android:layout_marginRight="228dp"
         android:layout_marginBottom="184dp"
         android:background="@drawable/cwiczenia1"
+        android:drawableBottom="@drawable/ic_water"
         android:insetLeft="17dp"
         android:insetTop="17dp"
         android:insetRight="17dp"
         android:insetBottom="17dp"
-        android:text="Button"
         app:backgroundTint="#2374BB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -123,11 +130,11 @@
         android:layout_marginRight="228dp"
         android:layout_marginBottom="12dp"
         android:background="@drawable/cwiczenia1"
+        android:drawableBottom="@drawable/ic_scale"
         android:insetLeft="17dp"
         android:insetTop="17dp"
         android:insetRight="17dp"
         android:insetBottom="17dp"
-        android:text="Button"
         app:backgroundTint="#872A90"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -144,5 +151,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo1" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogOut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
