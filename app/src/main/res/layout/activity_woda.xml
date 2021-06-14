@@ -38,7 +38,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ProgressBar
-        android:id="@+id/progressBar2"
+        android:id="@+id/wodaprogresbar"
         style="?android:attr/progressBarStyle"
         android:layout_width="268dp"
         android:layout_height="245dp"
@@ -54,15 +54,13 @@
         android:id="@+id/editTextNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginTop="192dp"
         android:ems="10"
         android:hint="Ilość wypitej wody (ml)"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+        app:layout_constraintTop_toBottomOf="@+id/wodaprogresbar" />
 
     <Button
         android:id="@+id/button4"
@@ -71,9 +69,9 @@
         android:text="Zatwierdź"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
-        app:layout_constraintVertical_bias="0.226" />
+        app:layout_constraintVertical_bias="0.489" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

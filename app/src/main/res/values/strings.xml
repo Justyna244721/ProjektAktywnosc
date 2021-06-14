@@ -4,5 +4,11 @@
     <string name="err_msg_enter_password">Wprowadź hasło</string>
     <string name="err_msg_enter_reppassword">Potwierdź hasło</string>
     <string name="err_msg_password_mismatch">Błędne hasło</string>
+    <string name="register_success">Błędne hasło</string>
+    <string name="err_msg_enter_email">Wprowadź email</string>
+    <string name="err_msg_enter_wiek">Podaj swój wiek</string>
+    <string name="err_msg_enter_idealnawaga">Wymażona waga</string>
+    <string name="err_msg_enter_wzrost">Podaj swój wzrost</string>
+    <string name="err_msg_enter_plec">Podaj swoją płeć</string>
 
 </resources>

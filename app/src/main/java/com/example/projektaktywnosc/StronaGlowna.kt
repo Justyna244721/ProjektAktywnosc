@@ -14,6 +14,7 @@ class StronaGlowna : AppCompatActivity() {
     private  var sen: Button?=null
     private var waga: Button?=null
     private  var cel: Button?=null
+    private var logout: Button?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +25,7 @@ class StronaGlowna : AppCompatActivity() {
         sen= findViewById(R.id.sen)
         waga= findViewById(R.id.waga)
         cel=findViewById(R.id.cel)
+        logout=findViewById(R.id.logout)
 
         bieganie?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?) {
@@ -55,6 +57,11 @@ class StronaGlowna : AppCompatActivity() {
                 openCel()
             }
         })
+        logout?.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(v: View?) {
+                openLogowanie()
+            }
+        })
     }
     private fun openBieganie(){
         val intent= Intent(this,Bieganie::class.java)
@@ -78,6 +85,10 @@ class StronaGlowna : AppCompatActivity() {
     }
     private fun openCel(){
         val intent= Intent(this,Cel::class.java)
+        startActivity(intent)
+    }
+    private fun openLogowanie(){
+        val intent= Intent(this,MainActivity::class.java)
         startActivity(intent)
     }
 }
