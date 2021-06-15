@@ -10,5 +10,10 @@
     <string name="err_msg_enter_idealnawaga">Wymażona waga</string>
     <string name="err_msg_enter_wzrost">Podaj swój wzrost</string>
     <string name="err_msg_enter_plec">Podaj swoją płeć</string>
-
+    <string name="dodanawoda">Wartość została dodana</string>
+    <string name="err_msg_enter_brakwody" >Wprowadź liczbę wypitej wody</string>
+    <string name="koniecwoda" >Gratuluje udało ci się wypełnić dzienne zapotrzebowanie na wode</string>
+    <string name="err_msg_enter_braksnu" >Wprowadź liczbę przespanych godzin</string>
+    <string name="dodanysen" >Wartość została dodana</string>
+    <string name="koniecsen" >Gratuluje udało ci się wypełnić dzienne zapotrzebowanie na sen</string>
 </resources>
