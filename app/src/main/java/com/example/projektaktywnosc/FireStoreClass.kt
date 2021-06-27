@@ -27,6 +27,8 @@ class FireStoreClass {
             }
 
     }
+
+
     fun getCurrentUserID(): String {
 
         val currentUser = FirebaseAuth.getInstance().currentUser
@@ -52,6 +54,11 @@ class FireStoreClass {
                     is MainActivity -> {
                         activity.userLoggedInSuccess(user)
                     }
+                    is Waga -> {
+                        activity.idealnawaga(user)
+                    }
+
+
 
 
 

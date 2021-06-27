@@ -16,4 +16,7 @@
     <string name="err_msg_enter_braksnu" >Wprowadź liczbę przespanych godzin</string>
     <string name="dodanysen" >Wartość została dodana</string>
     <string name="koniecsen" >Gratuluje udało ci się wypełnić dzienne zapotrzebowanie na sen</string>
+    <string name="err_msg_enter_brakwagi">Brak dodanej wagi</string>
+    <string name="koniecwaga">Gratulacje osiągnięto wymażoną wagę</string>
+    <string name="dodanowage">Dodano wagę</string>
 </resources>

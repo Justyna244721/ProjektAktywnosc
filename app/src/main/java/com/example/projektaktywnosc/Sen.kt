@@ -24,41 +24,41 @@ class Sen : Informacjerejestracja() {
         potwierdzsen?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?) {
 
-                if(wodainformacjedoguzika()){
-                    var woda= iloscsen?.text.toString().trim(){ it<= ' '}
+                if (wodainformacjedoguzika()) {
+                    var woda = iloscsen?.text.toString().trim() { it <= ' ' }
+                    if (wodainformacjedoguzika()) {
+
+                        var sen1 = iloscsen.text.toString().toInt()
+                        progsen += sen1
+                        senprogresbar!!.progress = progsen
 
 
-                    var sen1=iloscsen.text.toString().toInt()
-                    progsen+=sen1
-                    senprogresbar!!.progress=progsen
+                        if (progsen >= 8) {
+
+                            procentsen.setText("100%")
+                            Toast.makeText(
+                                this@Sen,
+                                resources.getString(R.string.koniecsen),
+                                Toast.LENGTH_LONG
+                            ).show()
+                        } else {
+                            var procent = (100 * progsen) / 8
+                            var procentstr = procent.toString()
+                            procentsen.setText(procentstr + "%")
+                        }
 
 
-                    if (progsen>=8){
 
-                        procentsen.setText("100%")
                         Toast.makeText(
                             this@Sen,
-                            resources.getString(R.string.koniecsen),
-                            Toast.LENGTH_LONG
+                            resources.getString(R.string.dodanysen),
+                            Toast.LENGTH_SHORT
                         ).show()
+
+
+                        iloscsen.text.clear()
+
                     }
-                    else{
-                        var procent=(100*progsen)/8
-                        var procentstr=procent.toString()
-                        procentsen.setText(procentstr+"%")
-                    }
-
-
-
-                    Toast.makeText(
-                        this@Sen,
-                        resources.getString(R.string.dodanysen),
-                        Toast.LENGTH_SHORT
-                    ).show()
-
-
-                    iloscsen.text.clear()
-
                 }
             }
         })

@@ -2,6 +2,7 @@ package com.example.projektaktywnosc
 
 import android.content.Intent
 import android.media.Image
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -19,6 +20,7 @@ class Woda : Informacjerejestracja() {
     private var progres:Int=0
     private lateinit var progresbar:ProgressBar
     private lateinit var wysprogres:TextView
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -91,6 +93,7 @@ class Woda : Informacjerejestracja() {
                     iloscwody.text.clear()
                     szklanka.isEnabled=true
                     butelka.isEnabled=true
+
                 }
             }
         })
